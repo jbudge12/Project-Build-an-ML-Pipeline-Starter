@@ -51,49 +51,54 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="A very basic data cleaning")
   
-    parser.add_argument(
-        "--input_artifact", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
-        required = True
-    )
+# Argument for input artifact
+parser.add_argument(
+    "--input_artifact", 
+    type = str,
+    help = "Initial artifact to be cleaned",  # Correct description
+    required = True
+)
 
-    parser.add_argument(
-        "--output_artifact", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
-        required = True
-    )
+# Argument for output artifact
+parser.add_argument(
+    "--output_artifact", 
+    type = str,
+    help = "Output artifact for cleaned data",  # Correct description
+    required = True
+)
 
-    parser.add_argument(
-        "--output_type", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
-        required = True
-    )
+# Argument for output type
+parser.add_argument(
+    "--output_type", 
+    type = str,
+    help = "Type of the output dataset",  # Correct description
+    required = True
+)
 
-    parser.add_argument(
-        "--output_description", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
-        required = True
-    )
+# Argument for output description
+parser.add_argument(
+    "--output_description", 
+    type = str,
+    help = "Description of the output dataset",  # Correct description
+    required = True
+)
 
-    parser.add_argument(
-        "--min_price", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
-        required = True
-    )
+# Argument for minimum price
+parser.add_argument(
+    "--min_price", 
+    type = float,
+    help = "Minimum house price to be considered",  # Correct description
+    required = True
+)
 
-    parser.add_argument(
-        "--max_price",
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
-        required = True
-    )
+# Argument for maximum price
+parser.add_argument(
+    "--max_price",
+    type = float,
+    help = "Maximum house price to be considered",  # Correct description
+    required = True
+)
 
+args = parser.parse_args()
 
-    args = parser.parse_args()
-
-    go(args)
+go(args)
