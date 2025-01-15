@@ -6,6 +6,9 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 
 In this project you will build such a pipeline.
 
+W&B link - https://wandb.ai/jbudge3-n-a/nyc_airbnb
+Github link - https://github.com/jbudge12
+
 ## Table of contents
 
 - [Preliminary steps](#preliminary-steps)
